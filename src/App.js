@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { FETCH_USERS } from './redux/actions/types';
 
 import './App.css';
 
 class App extends React.Component {
   
   componentDidMount() {
-    this.props.initialiseApp();  
+    this.props.fetchUsers();  
   }
 
   render() {
@@ -24,7 +25,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  initialiseApp: () => dispatch({type: 'INIT'})
+  fetchUsers: () => dispatch({type: FETCH_USERS})
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

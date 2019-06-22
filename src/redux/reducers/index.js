@@ -1,7 +1,7 @@
 import { combineReducers} from 'redux'
 
-import videosReducer from './videos'
+import users from './users'
 
 export default combineReducers({
-    videosReducer
+    users
 });

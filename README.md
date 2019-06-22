@@ -76,3 +76,7 @@ PureComponent,
 Thunk (axios),
 Sagas, 
 Testing
+setState,
+context,
+DOM manipulation
+// later - update portfolio,  lloys, preqin, voltaire 
