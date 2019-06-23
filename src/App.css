@@ -31,3 +31,18 @@
     transform: rotate(360deg);
   }
 }
+
+nav li {
+  display: inline;
+  padding: 10px;
+}
+
+nav li a {
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+nav li .active {
+  background-color: orange;
+}
